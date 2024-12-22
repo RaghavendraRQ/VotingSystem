@@ -32,6 +32,7 @@ class Plurality:
             The candidate with the most votes.
         """
         self._validate_ballots()
+        self._count_votes()
 
         winner = max(self._vote_counts, key=self._vote_counts.get)
         if list(self._vote_counts.values()).count(self._vote_counts[winner]) > 1:

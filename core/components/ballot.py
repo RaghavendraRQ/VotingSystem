@@ -21,6 +21,14 @@ class Ballot:
     def get_ranking(self) -> Dict[str, int | None]:
         return self._ballot_results
 
+    def sort_ranking(self) -> Dict[int, str]:
+        """
+        Sort the ranking of candidates.
+        Returns:
+            A dictionary of ranks and corresponding candidates.
+        """
+        return {v: k for k, v in sorted(self._ballot_results.items(), key=lambda item: item[1])}
+
     def vote(self, ranking: Dict[str, int]) -> bool:
         """
         Vote for candidates in order of preference.
@@ -47,6 +55,17 @@ class Ballot:
         """
         return min(self._ballot_results, key=self._ballot_results.get)
 
+    def preferred_n(self, n: int) -> str:
+        """
+        Get the nth most preferred candidate.
+        Args:
+            n: The rank of the candidate.
+
+        Returns:
+            The nth most preferred candidate.
+        """
+        return sorted(self._ballot_results, key=self._ballot_results.get)[n - 1]
+
     def _validate_candidate(self, candidate: str):
         if candidate not in self._candidates:
             raise ValueError(f"{candidate} is not a valid candidate.")
@@ -58,3 +77,6 @@ class Ballot:
         if set(ranking.values()) != set(range(1, len(self._candidates) + 1)):
             raise ValueError("Invalid ranking values.")
         return True
+
+    def __repr__(self):
+        return f"Ballot({self._voter_id})"
