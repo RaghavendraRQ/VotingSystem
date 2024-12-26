@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Added toy plurality.py and some components in system.">
-      <change afterPath="$PROJECT_DIR$/core/systems/instantRunOff.py" afterDir="false" />
+    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Implement instantRunOff.py successfully. (TODO: modify InstantRunOff class)">
+      <change afterPath="$PROJECT_DIR$/core/systems/bordaCount.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/ballot.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/ballot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/instantRunOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/instantRunOff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/tests/testcomponents.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests/testcomponents.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734721823997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement instantRunOff.py successfully. (TODO: modify InstantRunOff class)">
+      <option name="closed" value="true" />
+      <created>1734894699777</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734894699777</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,7 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added toy plurality.py and some components in system." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added toy plurality.py and some components in system." />
+    <MESSAGE value="Implement instantRunOff.py successfully. (TODO: modify InstantRunOff class)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement instantRunOff.py successfully. (TODO: modify InstantRunOff class)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

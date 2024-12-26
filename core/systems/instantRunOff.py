@@ -40,7 +40,6 @@ class InstantRunOff:
 
         # Get the candidate with the least votes
         loser = min(self._vote_counts, key=self._vote_counts.get)
-        print(f'Loser: {loser}')
 
         loser_n_preferred = self._vote_storage.get_ballot_n_preferred(loser, 1)
 
@@ -49,7 +48,7 @@ class InstantRunOff:
 
         self._vote_storage.eliminate_candidate(loser)
         self._vote_counts.pop(loser)
-        pass
+        return loser
 
     def get_winner(self) -> str:
         """
@@ -59,7 +58,7 @@ class InstantRunOff:
         """
         self._calculate_vote_counts()
         while len(self._vote_counts) > 1:
-            self._round_off()
+            loser = self._round_off()
 
         return list(self._vote_counts.keys())[0]
 

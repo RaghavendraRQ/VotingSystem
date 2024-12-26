@@ -1,6 +1,7 @@
 from core.components.ballot import Ballot
 from core.systems.plurality import Plurality
 from core.systems.instantRunOff import InstantRunOff
+from core.systems.bordaCount import BordaCount
 
 candidates = ["Alice", "Bob", "Charlie"]
 
@@ -37,10 +38,11 @@ print(f'Ballot 6: {ballot6.sort_ranking()}')
 ballots = [ballot1, ballot2, ballot3, ballot4, ballot5, ballot6]
 
 system = Plurality(ballots)
-print(f'Winner in Plurality: {system.get_winner()}')
+print(f'\033[32mWinner in Plurality: {system.get_winner()}')
 
 system = InstantRunOff(ballots)
-print(f'Winner in InstantRunOff: {system.get_winner()}')
+print(f'\033[32mWinner in InstantRunOff: {system.get_winner()}\033[0m')
 
-
+system = BordaCount(ballots)
+print(f'\033[32mResults in BordaCount: {system.get_winner()}\033[0m')
 
