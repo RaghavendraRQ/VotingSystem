@@ -1,4 +1,5 @@
 from core.components.ballot import Ballot
+from core.systems.approval import ApprovalSystem
 from core.systems.plurality import Plurality
 from core.systems.instantRunOff import InstantRunOff
 from core.systems.bordaCount import BordaCount
@@ -45,4 +46,7 @@ print(f'\033[32mWinner in InstantRunOff: {system.get_winner()}\033[0m')
 
 system = BordaCount(ballots)
 print(f'\033[32mResults in BordaCount: {system.get_winner()}\033[0m')
+
+system = ApprovalSystem(ballots)
+print(f'\033[32mWinner in ApprovalSystem: {system.get_winner()}\033[0m')
 
