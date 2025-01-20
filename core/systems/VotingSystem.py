@@ -1,19 +1,20 @@
 from typing import List
 
 
+VOTING_SYSTEMS = {
+    "plurality": "Plurality",   # Implemented
+    "majority": "Majority",     # Implemented
+    "borda": "Borda",           # Implemented
+    "approval": "Approval",     # Implemented
+    "range": "Range",           # Implemented
+
+    "ranked": "Ranked",         # Implementing
+    "condorcet": "Condorcet",   # Implementing
+    "instant-runoff": "Instant Runoff",     # Implemented
+    "single-transferable-vote": "Single Transferable Vote",     # Find out how to implement
+    "mixed-member-proportional": "Mixed Member Proportional"    # Find out how to implement
+}
 class Voting:
-    VOTING_SYSTEMS = {
-        "plurality": "Plurality",
-        "majority": "Majority",
-        "borda": "Borda",
-        "approval": "Approval",
-        "range": "Range",
-        "ranked": "Ranked",
-        "condorcet": "Condorcet",
-        "instant-runoff": "Instant Runoff",
-        "single-transferable-vote": "Single Transferable Vote",
-        "mixed-member-proportional": "Mixed Member Proportional"
-    }
 
     def __init__(self, candidates: List[str], default_voting_system: str = "plurality"):
         self._candidates = candidates

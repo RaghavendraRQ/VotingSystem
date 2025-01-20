@@ -1,11 +1,11 @@
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 
 class Ballot:
     def __init__(self, candidates: List[str], voter_id: str):
         self._candidates: List[str] = candidates
         self._voter_id: str = voter_id
-        self._ballot_results: Dict[str, int | None] = {
+        self._ballot_results: Dict[str, Optional[int]] = {
             candidate: None for candidate in candidates
         }
 
@@ -38,13 +38,17 @@ class Ballot:
         Returns:
             True if the vote was successful.
         """
-        self._validate_ranks(ranking)
+        for candidate in ranking.keys():
+            self._validate_candidate(candidate)
 
-        for candidate, rank in ranking.items():
-            if self._validate_candidate(candidate):
-                self._ballot_results[candidate] = rank
-            else:
-                raise ValueError(f"{candidate} is not a valid candidate.")
+        unranked_candidates = set(self._candidates) - set(ranking.keys())
+        unranked_start_rank = max(ranking.values(), default=0) + 1
+
+        for idx, candidate in enumerate(unranked_candidates):
+            ranking[candidate] = unranked_start_rank + idx
+
+        self._validate_ranks(ranking)
+        self._ballot_results.update(ranking)
         return True
 
     def most_preferred(self) -> str:
@@ -53,6 +57,8 @@ class Ballot:
         Returns:
             The most preferred candidate.
         """
+        if None in self._ballot_results.values():
+            raise ValueError("Ballot is incomplete.")
         return min(self._ballot_results, key=self._ballot_results.get)
 
     def preferred_n(self, n: int) -> str:
@@ -64,6 +70,8 @@ class Ballot:
         Returns:
             The nth most preferred candidate.
         """
+        if None in self._ballot_results.values():
+            raise ValueError("Ballot is incomplete.")
         return sorted(self._ballot_results, key=self._ballot_results.get)[n - 1]
 
     def _validate_candidate(self, candidate: str):
@@ -72,11 +80,12 @@ class Ballot:
         return True
 
     def _validate_ranks(self, ranking: Dict[str, int]):
+        expected_ranks = set(range(1, len(self._candidates) + 1))
+        actual_ranks = set(ranking.values())
         if len(ranking) != len(self._candidates):
-            raise ValueError("Ranking does not match number of candidates.")
-        if set(ranking.values()) != set(range(1, len(self._candidates) + 1)):
-            raise ValueError("Invalid ranking values.")
-        return True
+            raise ValueError(f"Expected {len(self._candidates)} ranks but got {len(ranking)}.")
+        if actual_ranks != expected_ranks:
+            raise ValueError(f"Invalid ranking values. Expected ranks {expected_ranks}, but got {actual_ranks}.")
 
     def __repr__(self):
         return f"Ballot({self._voter_id})"
