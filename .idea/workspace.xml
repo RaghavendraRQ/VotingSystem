@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Add approval System. make changes to it.">
-      <change afterPath="$PROJECT_DIR$/core/systems/majority.py" afterDir="false" />
+    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Add Majority Voting System">
+      <change afterPath="$PROJECT_DIR$/core/systems/Range.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/systems/approval.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/approval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/systems/bordaCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/bordaCount.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/systems/instantRunOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/instantRunOff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/systems/plurality.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/plurality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/approval.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/Approval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/bordaCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/BordaCount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/instantRunOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/InstantRunOff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/majority.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/Majority.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/plurality.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/Plurality.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/tests/testcomponents.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests/testcomponents.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735742832448</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Majority Voting System">
+      <option name="closed" value="true" />
+      <created>1737364903404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737364903404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +180,8 @@
     <MESSAGE value="Implement instantRunOff.py successfully. (TODO: modify InstantRunOff class)" />
     <MESSAGE value="Implement bordaCount.py successfully" />
     <MESSAGE value="Add approval System. make changes to it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add approval System. make changes to it." />
+    <MESSAGE value="Add Majority Voting System" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Majority Voting System" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -1,19 +1,17 @@
-from typing import List
 from core.components.ballot import Ballot
 
-
-class ApprovalSystem:
+class Range:
     """
-    Definition: Voters approve or disapprove of each candidate. The candidate with the most approvals wins.\n
+    Definition: Voters score each candidate on a scale. The candidate with the highest total score wins.\n
     Use Case: Some academic and organizational elections.\n
-    Advantages: Simple and allows support for multiple candidates.\n
-    Disadvantages: Can lead to strategic voting.
+    Advantages: Allows voters to express their preferences more accurately.\n
+    Disadvantages: Can be more complex to implement and understand.
     """
 
-    def __init__(self, ballots: List[Ballot]):
+    def __init__(self, ballots: list[Ballot]):
         self._ballots = ballots
         self._candidates = self._ballots[0].candidates
-        self._vote_counts = {}
+        self._vote_counts = {candidate: 0 for candidate in self._candidates}
 
     @property
     def ballots(self):
@@ -25,14 +23,13 @@ class ApprovalSystem:
 
     def calculate_results(self):
         """
-        Calculate the Approval System results.
+        Calculate the Range System results.
         Returns:
             A dictionary of candidates and their vote counts.
         """
-        self._vote_counts = {candidate: 0 for candidate in self._candidates}
         for ballot in self._ballots:
-            for candidate in ballot.get_ranking:
-                self._vote_counts[candidate] += 1
+            for candidate, score in ballot.get_ranking.items():
+                self._vote_counts[candidate] += score
         return self._vote_counts
 
     def get_winner(self):
@@ -57,4 +54,3 @@ class ApprovalSystem:
             self._vote_counts = {candidate: 0 for candidate in self._candidates}
         self._ballots.append(ballot)
         return True
-
