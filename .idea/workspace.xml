@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Implement bordaCount.py successfully" />
+    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Add approval System. make changes to it.">
+      <change afterPath="$PROJECT_DIR$/core/systems/majority.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/approval.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/approval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/bordaCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/bordaCount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/instantRunOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/instantRunOff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/plurality.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/plurality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tests/testcomponents.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests/testcomponents.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,14 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.testcomponents.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.testcomponents.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/raghavendra/Myworkspace/Backend/VotingSystem",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.testcomponents">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="VotingSystem" />
@@ -133,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735238978005</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add approval System. make changes to it.">
+      <option name="closed" value="true" />
+      <created>1735742832448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735742832448</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +169,8 @@
     <MESSAGE value="Added toy plurality.py and some components in system." />
     <MESSAGE value="Implement instantRunOff.py successfully. (TODO: modify InstantRunOff class)" />
     <MESSAGE value="Implement bordaCount.py successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement bordaCount.py successfully" />
+    <MESSAGE value="Add approval System. make changes to it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add approval System. make changes to it." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

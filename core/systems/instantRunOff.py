@@ -4,6 +4,12 @@ from core.components.ballot import Ballot
 
 
 class InstantRunOff:
+    """
+    Definition: Voters rank candidates. The candidate with the fewest votes is eliminated, and their votes are redistributed to voters' next preferences until one candidate has a majority.\n
+    Use case: Common in single-member districts.\n
+    Advantages: Ensures majority support; reduces the impact of vote splitting\n
+    Disadvantages: Can be complex to Count and implement\n
+    """
     def __init__(self, ballots: List[Ballot]):
         self._ballots = ballots
         self._vote_counts = None

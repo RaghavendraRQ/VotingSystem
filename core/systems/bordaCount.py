@@ -4,6 +4,11 @@ from core.components.ballot import Ballot
 
 
 class BordaCount:
+    """
+    Definition: Voters rank candidates. Points are assigned based on rank (e.g., 1st = N**2 points, 2nd = N-1**2 points, etc.), and the candidate with the highest total wins.\n
+    Use Case: Decision-making in small groups or organizations.\n
+    Advantages: Considers voters' preferences more comprehensively\n
+    """
 
     def __init__(self, ballots: List[Ballot], borda_values: List[int] | None = None):
         self._ballots = ballots

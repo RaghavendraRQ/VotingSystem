@@ -6,6 +6,14 @@ logger = logging.getLogger('system.plurality')
 
 
 class Plurality:
+    """
+    Definition: The candidate with the most votes wins, even if they don't have a majority (>50%).\n
+    Use Case: Common in single-member districts.\n
+    Advantages: Simple to understand and implement.\n
+    Disadvantages: Can lead to minority rule.
+
+    """
+
     def __init__(self, ballots: List[Ballot] | None = None):
         self._ballots: List[Ballot] = ballots or []
 

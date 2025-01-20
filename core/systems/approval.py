@@ -3,6 +3,12 @@ from core.components.ballot import Ballot
 
 
 class ApprovalSystem:
+    """
+    Definition: Voters approve or disapprove of each candidate. The candidate with the most approvals wins.\n
+    Use Case: Some academic and organizational elections.\n
+    Advantages: Simple and allows support for multiple candidates.\n
+    Disadvantages: Can lead to strategic voting.
+    """
 
     def __init__(self, ballots: List[Ballot]):
         self._ballots = ballots
