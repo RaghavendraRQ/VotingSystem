@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Introduced Range want to fix it">
-      <change afterPath="$PROJECT_DIR$/core/systems/Ranked.py" afterDir="false" />
+    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Modified Ballot class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/components/ballot.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/ballot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/systems/VotingSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/VotingSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/Ranked.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/Ranked.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tests/testcomponents.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests/testcomponents.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/raghavendra/Myworkspace/Backend/VotingSystem&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/raghavendra/Myworkspace/CyberSecurity/PQC&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
@@ -164,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737386552701</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modified Ballot class">
+      <option name="closed" value="true" />
+      <created>1737388354578</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737388354578</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +193,8 @@
     <MESSAGE value="Add approval System. make changes to it." />
     <MESSAGE value="Add Majority Voting System" />
     <MESSAGE value="Introduced Range want to fix it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduced Range want to fix it" />
+    <MESSAGE value="Modified Ballot class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Ballot class" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
