@@ -89,3 +89,14 @@ class Ballot:
 
     def __repr__(self):
         return f"Ballot({self._voter_id})"
+
+    def is_preferred(self, candidate1, candidate2):
+        """
+        Check if candidate1 is preferred over candidate2.
+        Args:
+            candidate1: The first candidate.
+            candidate2: The second candidate.
+        Returns:
+            True if candidate1 is preferred.
+        """
+        return self._ballot_results[candidate1] < self._ballot_results[candidate2]

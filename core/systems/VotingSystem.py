@@ -7,10 +7,10 @@ VOTING_SYSTEMS = {
     "borda": "Borda",           # Implemented
     "approval": "Approval",     # Implemented
     "range": "Range",           # Implemented
+    "ranked": "Ranked",  # Implemented
+    "instant-runoff": "Instant Runoff",  # Implemented
 
-    "ranked": "Ranked",         # Implementing
     "condorcet": "Condorcet",   # Implementing
-    "instant-runoff": "Instant Runoff",     # Implemented
     "single-transferable-vote": "Single Transferable Vote",     # Find out how to implement
     "mixed-member-proportional": "Mixed Member Proportional"    # Find out how to implement
 }

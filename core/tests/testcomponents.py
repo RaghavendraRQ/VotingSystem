@@ -1,5 +1,5 @@
 from core.components.ballot import Ballot
-from core.systems import Approval, BordaCount, InstantRunOff, Majority, Plurality, Range, Ranked
+from core.systems import Approval, BordaCount, InstantRunOff, Majority, Plurality, Range, Ranked, Condorcet
 
 candidates = ["Alice", "Bob", "Charlie"]
 
@@ -56,3 +56,6 @@ print(f'\033[32mWinner in Range: {system.get_winner()}\033[0m')
 system = Ranked(ballots, "Instant Runoff")
 print(f'\033[32mWinner in Ranked: {system.get_winner()}\033[0m')
 
+system = Condorcet(ballots)
+system.pairwise_matrix()
+print(f'\033[32mWinner in Condorcet: {system.get_winner()}\033[0m')

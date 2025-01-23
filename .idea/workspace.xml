@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Modified Ballot class">
+    <list default="true" id="f57697c1-0b92-4baa-b38d-5f261613c375" name="Changes" comment="Implemented Ranked Voting System">
+      <change afterPath="$PROJECT_DIR$/core/systems/Condorcet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/systems/Ranked.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/Ranked.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/components/ballot.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/components/ballot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/systems/VotingSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/VotingSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/systems/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/systems/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/tests/testcomponents.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests/testcomponents.py" afterDir="false" />
     </list>
@@ -172,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737388354578</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implemented Ranked Voting System">
+      <option name="closed" value="true" />
+      <created>1737652339586</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737652339586</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +204,8 @@
     <MESSAGE value="Add Majority Voting System" />
     <MESSAGE value="Introduced Range want to fix it" />
     <MESSAGE value="Modified Ballot class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified Ballot class" />
+    <MESSAGE value="Implemented Ranked Voting System" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Ranked Voting System" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
