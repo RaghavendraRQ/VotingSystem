@@ -37,15 +37,6 @@ VotingSystem/
 
 ## 🛡️ Future Enhancements
 
-- Add cryptographic authentication (e.g., public key signatures)
 - Implement a database backend
 - Web-based interface with Flask or FastAPI
 - Add automated test suite with `pytest`
-
-## 📘 License
-
-MIT License
-
----
-
-*This project is educational and intended as a prototype. Not suitable for production-grade voting systems without further security audits.*
